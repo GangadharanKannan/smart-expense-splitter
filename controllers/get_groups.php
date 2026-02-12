@@ -2,6 +2,9 @@
 
 require_once "../config/db.php";
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Content-Type: application/json");
 
 $user_id = $_GET['user_id'] ?? '';

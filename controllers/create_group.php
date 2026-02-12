@@ -2,6 +2,9 @@
 
 require_once "../config/db.php";
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Content-Type: application/json");
 
 $data = json_decode(file_get_contents("php://input"), true);
@@ -37,7 +40,10 @@ $memberStmt->execute();
 echo json_encode([
     "status"=>true,
     "message"=>"Group created successfully",
-    "group_id"=>$group_id
+    "group"=>[
+        "id" => $group_id,
+        "group_name" => $group_name,
+    ]
 ]);
 
 ?>
