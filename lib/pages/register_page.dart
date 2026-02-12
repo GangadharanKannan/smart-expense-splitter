@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/glass_background.dart';
-import 'register_page.dart';
-import 'groups_page.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +12,7 @@ class LoginPage extends StatelessWidget {
         children: [
 
           const Text(
-            "Login",
+            "Register",
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
@@ -28,6 +26,17 @@ class LoginPage extends StatelessWidget {
             style: TextStyle(color: Colors.white),
             decoration: InputDecoration(
               labelText: "Username",
+              labelStyle: TextStyle(color: Colors.white),
+              border: OutlineInputBorder(),
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          const TextField(
+            style: TextStyle(color: Colors.white),
+            decoration: InputDecoration(
+              labelText: "Email",
               labelStyle: TextStyle(color: Colors.white),
               border: OutlineInputBorder(),
             ),
@@ -51,35 +60,13 @@ class LoginPage extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const GroupsPage(),
-                  ),
-                );
+                Navigator.pop(context);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
               ),
-              child: const Text("Login"),
-            ),
-          ),
-
-          const SizedBox(height: 10),
-
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const RegisterPage(),
-                ),
-              );
-            },
-            child: const Text(
-              "Don't have an account? Register",
-              style: TextStyle(color: Colors.white),
+              child: const Text("Register"),
             ),
           ),
         ],
