@@ -96,7 +96,7 @@ CREATE TABLE expense_splits (
 }
 ```
 
-![Register Image](assets/images/register.png)
+![Register Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/register.png.jpeg)
 
 ------------------------------------------------------------------------
 
@@ -128,7 +128,7 @@ CREATE TABLE expense_splits (
   }
 }
 ```
- ![Login Image](assets/images/register.png)
+ ![Login Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/login.png.jpeg)
 
 ------------------------------------------------------------------------
 
@@ -155,7 +155,7 @@ CREATE TABLE expense_splits (
   "message": "Group created successfully"
 }
 ```
- ![Group Creation Image](assets/images/register.png)
+ ![Creation Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/create_group.png.jpeg)
 ------------------------------------------------------------------------
 
 ## ✅ Add Member
@@ -179,7 +179,7 @@ CREATE TABLE expense_splits (
   "message": "Member added successfully"
 }
 ```
- ![Member Adding Image](assets/images/register.png)
+ ![Member Adding Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/add_member.png.jpeg)
 ------------------------------------------------------------------------
 
 ## ✅ Get All Groups
@@ -199,14 +199,14 @@ CREATE TABLE expense_splits (
   ]
 }
 ```
- ![Get Groups Image](assets/images/register.png)
+ ![Get Groups Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/get_groups.png.jpeg)
 ------------------------------------------------------------------------
 
 ## ✅ Get Group Members
 
     GET /controllers/get_members.php?group_id=12
 
- ![Get Member Image](assets/images/register.png)
+ ![Get Member Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/get_members.png.jpeg)
 
 ------------------------------------------------------------------------
 
@@ -236,14 +236,14 @@ CREATE TABLE expense_splits (
   "message": "Expense added successfully"
 }
 ```
- ![Expense Add Image](assets/images/register.png)
+ ![Expense Add Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/add_expense.png.jpeg)
 ------------------------------------------------------------------------
 
 ## ✅ Get Group Expenses
 
     GET /controllers/get_expense.php?group_id=9
 
- ![Get Group Expense Image](assets/images/register.png)
+ ![Get Group Expense Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/get_expense.png.jpeg)
 ------------------------------------------------------------------------
 
 ## ✅ Split Expense / Balance Summary
@@ -252,7 +252,7 @@ CREATE TABLE expense_splits (
 
 Returns each member's total paid, owed amount, and balance.
 
- ![Summary Image](assets/images/register.png)
+ ![Summary Image](https://github.com/GangadharanKannan/smart-expense-splitter/blob/6b166b267c7b461b63962c5a2e97429248c0d287/assets/images/summary_expense.png.jpeg)
 ------------------------------------------------------------------------
 
 # ▶️ How To Run Backend Locally
